@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="jumbotron">
+        <h1>Jarvis</h1>
+        <p class="lead">You're... Jimmie, right? This is your house? Sure is. I'm Winston Wolfe. I solve problems. Good, we got one. So I heard. May I come in? Uh, yeah, please do.
+        </p>
+    {% if not app.user %}
+        <p><a href="" class="btn btn-primary">Sign up and start exploring</a></p>
+    {% else %}
+        <p><a href="" class="btn btn-primary">Start exploring</a></p>
+    {% endif %}
+    </div>
+{% endblock %}
